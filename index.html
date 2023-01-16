@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="canvas.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="scroll.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="images/Subtract.svg" alt="logo">
+            <div class="menu"><img id="menuImg" src="images/hamburger.svg" alt=""></div>
+            <ul class="nav-list">
+                <li><a style="cursor: pointer;" onclick="scAbout()">About</a></li>
+                <li><a style="cursor: pointer;" onclick="scWork()">Work</a></li>
+                <li><a style="cursor: pointer;" onclick="scContact()">Contact</a></li>
+                <li><a href="#"><img class="git" src="images/github.svg" alt="git"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="res-nav">
+        <ul class="nav-list-res">
+            <li><a style="cursor: pointer;" onclick="scAbout()">About</a></li>
+            <li><a style="cursor: pointer;" onclick="scWork()">Work</a></li>
+            <li><a style="cursor: pointer;" onclick="scContact()">Contact</a></li>
+            <li><a href="#"><img class="git" src="images/github.svg" alt="git"></a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="dark first">
+            <canvas id="canvas">
+            </canvas>
+            <div style="min-height: 100vh;" class="con-p center">
+                <div>
+                    <h1 class="h-pad h-dark">Hi, I'm <span class="purple-clr">Oliver Vrabel</span> and I am a frontend developer</h1>
+                <button onclick="scWork()" class="btn">View my work</button>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="back-light">
+            <div class="row h-pad hd-down"><span class="purple-clr"><h2>&lt;h1&gt;</h2></span><h2>About</h2><span class="purple-clr"><h2>&lt;h1/&gt;</h2></span></div>
+            <div class="container about-text">
+                <div class="about-i hd-left">
+                    <h2 class="purple-clr text-center">Little about me</h2>
+                    <p class="p-light p-pad text-center">I am a hobbyist and a freelance front-end developer living in New York.</p>
+                </div>
+                <div class="about-i hd-right">
+                    <h2 class="purple-clr text-center">My skills:</h2>
+                    <div class="lan-con p-pad text-center">
+                        <div class="lan"><img src="images/html.png" alt="html"><h4>HTML</h4></div>
+                        <div class="lan"><img src="images/css.png" alt="css"><h4>CSS</h4></div>
+                        <div class="lan"><img src="images/js.png" alt="javascript"><h4>JS</h4></div>
+                        <div class="lan"><img src="images/react.png" alt="react"><h4>React</h4></div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="b-pad purple-clr text-center hd-down">What i offer</h2>
+            <div class="card-con container">
+                <div class="card hd-left">
+                    <div class="img-h"><img src="images/mail.svg" alt=""></div>
+                    <h3>Email template</h3>
+                    <p class="p-light">I can make templates for your emails with HTML and CSS to give them more profesional feel.</p>
+                </div>
+                <div class="card hd-left">
+                    <div class="img-h"><img src="images/responsive.svg" alt=""></div>
+                    <h3>Responsive Design</h3>
+                    <p class="p-light">My goal is to make websites pleasing to the eye for all the devices.</p>
+                </div>
+                <div class="card hd-left">
+                    <div class="img-h"> <img src="images/dynamic.svg" alt=""></div>
+                    <h3>Dynamic Website</h3>
+                    <p class="p-light">I love to make websites feel alive with animations and effects to give the users most unique experience.</p>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="back-dark">
+            <div class="row h-pad hd-down"><span class="purple-clr"><h2>&lt;h1&gt;</h2></span><h2 class="h-dark">Work</h2><span class="purple-clr"><h2>&lt;h1/&gt;</h2></span></div>
+            <div class="grid-con container">
+                <div class="project hd-left">
+                        <img src="images/countries.png" alt="">
+                        <div class="project-info">
+                            <h3 class="purple-clr">Countries API</h3>
+                            <p class="p-dark">Application created with REACT which uses external API that pulls information about every country in the world. You can also switch the look of the website between dark and light theme. Ready to explore the world?</p>
+                            <label class="p-pad purple-clr">Built using:</label>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>REACT</li>
+                                <li>API</li>
+                            </ul>
+                            <div class="links">
+                                <a href=""><img class="exit" src="images/exit.svg" alt=""></a>
+                                <a href=""><img class="git" src="images/github.svg" alt=""></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="project hd-left">
+                    <img src="images/todo.png" alt="">
+                    <div class="project-info">
+                        <h3 class="purple-clr">To do list</h3>
+                        <p class="p-dark">Basic vanilla javascript CRUD application where you can also mark the items as completed or incomple and filter between them. Don't be shy and try it out for yourself!</p>
+                        <br>
+                        <label class="p-pad purple-clr">Built using:</label>
+                        <ul class="tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <div class="links">
+                            <a href=""><img class="exit" src="images/exit.svg" alt=""></a>
+                            <a href=""><img class="git" src="images/github.svg" alt=""></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="project hd-left">
+                <img src="images/countries.png" alt="">
+                <div class="project-info">
+                    <h3 class="purple-clr">Connect four</h3>
+                    <p class="p-dark">Application built with REACT that brings you back to your childhood. The game you minght know as connect four you can now play for free. Feel free to have a match with your buddy or against yourself.</p>
+                    <label class="p-pad purple-clr">Built using:</label>
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>REACT</li>
+                    </ul>
+                    <div class="links">
+                        <a href=""><img class="exit" src="images/exit.svg" alt=""></a>
+                        <a href=""><img class="git" src="images/github.svg" alt=""></a>
+                    </div>
+                </div>
+        </div>
+        <div class="project hd-left">
+            <img src="images/countries.png" alt="">
+            <div class="project-info">
+                <h3 class="purple-clr">Landing page</h3>
+                <p class="p-dark">This website is a showcase of my frontend skills and that i am capable of implementing unique designs. The design and resources are available on frontendmentor.com. Feel free to have a look around!</p>
+                <label class="p-pad purple-clr">Built using:</label>
+                <ul class="tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <div class="links">
+                    <a href=""><img class="exit" src="images/exit.svg" alt=""></a>
+                    <a href=""><img class="git" src="images/github.svg" alt=""></a>
+                </div>
+            </div>
+    </div>
+                
+            </div>
+        </section>
+        <section id="contact" class="back-light">
+            <div class="row h-pad hd-down"><span class="purple-clr"><h2>&lt;h1&gt;</h2></span><h2>Contact</h2><span class="purple-clr"><h2>&lt;h1/&gt;</h2></span></div>
+            <div class="con-p hd-right">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <input placeholder="Email..." type="text">
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Subject..." type="text">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

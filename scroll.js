@@ -36,15 +36,25 @@ function scrollToEl(element){
     })
 }
 
+function close(){
+    const menu = document.querySelector(".menu")
+    const img = document.querySelector("#menuImg")
+
+    img.src = "images/hamburger.svg"
+    document.querySelector(".res-nav").classList.remove("res-active")
+}
+
 function scAbout(){
     scrollToEl(document.getElementById("about"))
+    close()
 }
 
 function scWork(){
     scrollToEl(document.getElementById("work"))
+    close()
 }
 
 function scContact(){
-    console.log(document.getElementById("contact").getBoundingClientRect().top)
     scrollToEl(document.getElementById("contact"))
+    close()
 }

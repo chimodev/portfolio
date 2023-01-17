@@ -47,6 +47,11 @@ ul{
 a{
     text-decoration: none;
     color: white;
+    transition: .2s ease-in;
+}
+
+a:hover{
+    color: var(--purple-clr);
 }
 
 nav{
@@ -361,7 +366,38 @@ input,textarea{
     display: none;
 }
 
+footer{
+    background-color: var(--dark-clr);
+    padding: 2rem 0;
+}
+
+.foot-nav, .foot-nav ul,.email,.foot-contact{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.foot-nav img{
+    width: 1.5rem;
+}
+
+.email img{
+    width: 30px;
+}
+
+.email{
+ color: white;
+}
+
+.footer-con{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width:420px) {
+    .foot-nav, .foot-nav ul,.foot-contact,.footer-con{
+        flex-direction: column;
+        margin: 1rem;
+    }
     .menu{
         display: block;
     }
